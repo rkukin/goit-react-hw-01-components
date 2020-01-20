@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import user from './user.json';
+import ProfileCard from './components/ProfileCard';
+import statisticalData from './statistical-data.json';
+import Statistics from './components/Statistics';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<ProfileCard user={user} />, document.getElementById('root'));
+
+ReactDOM.render(
+    <Statistics title="Upload stats" stats={statisticalData} />,
+    document.getElementById('root'),
+);
