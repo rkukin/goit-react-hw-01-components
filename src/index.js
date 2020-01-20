@@ -23,6 +23,6 @@ import TransactionHistory from './components/TransactionHistory'
 // );
 
 ReactDOM.render(
-    <TransactionHistory items={transactions} />,
-    document.getElementById('root'),
+  <TransactionHistory items={transactions} />,
+  document.getElementById('root'),
 );
