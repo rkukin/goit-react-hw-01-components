@@ -2,12 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Statistics({ title, stats }) {
-
     return (
-        <section class="statistics">
-            {title && <h2 class="title">{title}</h2>}
+        <section className="statistics">
+            {title && <h2 className="title">{title}</h2>}
 
-            {stats.length > 0 && <ul class="stat-list">
+            {stats.length > 0 && <ul className="stat-list">
                 {stats.map(stat => (
                     <li key={stat.id}>
                         <span>{stat.label}</span>

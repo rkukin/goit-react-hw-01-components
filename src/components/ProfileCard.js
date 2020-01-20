@@ -39,4 +39,14 @@ ProfileCard.propTypes = {
     likes: PropTypes.number
 }
 
+ProfileCard.defaultProps = {
+    name: 'name_goes_here',
+    avatar: 'avatar_url_goes_here',
+    location: 'location_goes_here',
+    tag: 'tag_goes_here',
+    followers: 0,
+    views: 0,
+    likes: 0
+}
+
 export default ProfileCard;
