@@ -8,7 +8,7 @@ function FriendList({ friends }) {
     <ul className="friend-list">
       {
         friends.map(friend => (
-          <FriendListItem friend={friend} />
+          <FriendListItem key={friend.id} friend={friend} />
         ))
       }
     </ul>

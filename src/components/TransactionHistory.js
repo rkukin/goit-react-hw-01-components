@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function TransactionHistory({ items }) {
+function TransactionHistory({ transactions }) {
   return (
     <table className="transaction-history">
       <thead>
@@ -11,12 +11,12 @@ function TransactionHistory({ items }) {
           <th>Currency</th>
         </tr>
       </thead>
-      {items.length > 0 && <tbody>
-        {items.map(item => (
-          <tr key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+      {transactions.length > 0 && <tbody>
+        {transactions.map(transactions => (
+          <tr key={transactions.id}>
+            <td>{transactions.type}</td>
+            <td>{transactions.amount}</td>
+            <td>{transactions.currency}</td>
           </tr>
         ))}
       </tbody>}
