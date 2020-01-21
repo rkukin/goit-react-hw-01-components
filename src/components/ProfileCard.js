@@ -9,12 +9,17 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 3px 0px rgba(191, 205, 222, 0.75);
     max-width: 250px;
-
+    margin-bottom: 100px;
   `;
 
   const ProfileDescription = styled.div`
-    padding: 30px 0;
-    margin: auto 0`;
+    padding: 20px 0;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+`;
 
   const Avatar = styled.img`
     margin: auto 0;
@@ -26,31 +31,72 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
     margin: 0;
     padding: 0;
     display: flex;
-
+    justify-content: space-around;
   `;
 
+  const StatsItem = styled.li`
+  display: flex;
+  flex-direction: column;
+border: 1px solid #e4e9f0;
+background-color: #f3f6f9;
+min-height: 74px;
+justify-content: space-evenly;
+min-width: 33.3%;
+align-items: center;
+`;
+
+  const Name = styled.p`
+color: #122236;
+font-family: Lato;
+font-size: 18px;
+font-weight: 700;
+line-height: 32px;
+`;
+  const Label = styled.p`
+color: #768696;
+font-family: Lato;
+font-size: 14px;
+font-weight: 400;
+line-height: 32px;
+`;
+
+  const StatLabel = styled.span`
+color: #768696;
+font-family: Lato;
+font-size: 12px;
+font-weight: 400;
+line-height: 32px;
+`;
+
+  const Quantity = styled.span`
+color: #1f3349;
+font-family: Lato - Black;
+font-size: 14px;
+font-weight: 900;
+line-height: 32px;
+`;
 
   return (
     <ProfileCard className = "profile">
       <ProfileDescription className = "description">
         <Avatar className = "avatar" src={avatar} alt='user avatar' />
-        <p className = "name">{name}</p>
-        <p className="tag">@{tag}</p>
-        <p className = "location">{location}</p>
+        <Name className = "name">{name}</Name>
+        <Label className="tag">@{tag}</Label>
+        <Label className = "location">{location}</Label>
       </ProfileDescription>
       <StatsList className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity" >{followers}</span>
-        </li>
-        <li>
-          <span className="label" >Views</span>
-          <span className="quantity" >{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
+        <StatsItem>
+          <StatLabel className="label">Followers</StatLabel>
+          <Quantity className="quantity" >{followers}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <StatLabel className="label" >Views</StatLabel>
+          <Quantity className="quantity" >{views}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <StatLabel className="label">Likes</StatLabel>
+          <Quantity className="quantity">{likes}</Quantity>
+        </StatsItem>
       </StatsList>
     </ProfileCard>
   )

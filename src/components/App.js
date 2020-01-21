@@ -374,12 +374,11 @@ textarea {
 
   return (
     <>
-
+        <GlobalStyles />
       <ProfileCard user={props.user} />
       <Statistics title={props.title} stats={props.stats} />
       <FriendList friends={props.friends} />
       <TransactionHistory transactions={props.transactions} />
-      <GlobalStyles />
     </>
   )
 }
