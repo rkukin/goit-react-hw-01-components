@@ -4,10 +4,15 @@ import PropTypes from 'prop-types';
 
 function FriendListItem({ friend: { avatar, name, isOnline, id } }) {
 
+    let onlineStatus = ["isOnline"];
+    if (isOnline){
+        onlineStatus.push("online")
+    } else {
+        onlineStatus.push("offline")
+    }
   return (
     <li key={id} className="item">
-      {/* //TODO: Add CSS depending on isOnline prop */}
-      <span className='isOnline'></span>
+      <span className={onlineStatus.join(" ")}/>
       <img className="avatar" src={avatar} alt="avatar" />
       <p className="name">{name}</p>
     </li >

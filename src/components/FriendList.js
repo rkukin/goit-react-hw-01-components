@@ -17,6 +17,6 @@ function FriendList({ friends }) {
 
 FriendList.propTypes = {
   friends: PropTypes.array
-}
+};
 
 export default FriendList
