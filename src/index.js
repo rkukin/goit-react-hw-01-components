@@ -4,6 +4,6 @@ import user from './user.json';
 import statisticalData from './statistical-data.json';
 import friends from './friends.json';
 import transactions from './transactions.json';
-import MainComponent from './components/MainComponent'
+import App from './components/App'
 
-ReactDOM.render(<MainComponent user={user} title='Upload stats' stats={statisticalData} friends={friends} transactions={transactions} />, document.getElementById('root'));
+ReactDOM.render(<App user={user} title='Upload stats' stats={statisticalData} friends={friends} transactions={transactions} />, document.getElementById('root'));
