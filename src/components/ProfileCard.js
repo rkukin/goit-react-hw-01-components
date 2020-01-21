@@ -5,22 +5,39 @@ import styled from 'styled-components';
 function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, views, likes } } }) {
 
   const ProfileCard = styled.div`
-  list-style: none
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px 0px rgba(191, 205, 222, 0.75);
+    max-width: 250px;
+
   `;
+
+  const ProfileDescription = styled.div`
+    padding: 30px 0;
+    margin: auto 0`;
+
+  const Avatar = styled.img`
+    margin: auto 0;
+    border-radius: 50%;
+`;
 
   const StatsList = styled.ul`
-    list-style: none
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 
   `;
+
 
   return (
     <ProfileCard className = "profile">
-      <div className = "description">
-        <img className = "avatar" src={avatar} alt='user avatar' />
+      <ProfileDescription className = "description">
+        <Avatar className = "avatar" src={avatar} alt='user avatar' />
         <p className = "name">{name}</p>
         <p className="tag">@{tag}</p>
         <p className = "location">{location}</p>
-      </div>
+      </ProfileDescription>
       <StatsList className="stats">
         <li>
           <span className="label">Followers</span>
