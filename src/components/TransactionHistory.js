@@ -22,14 +22,14 @@ function TransactionHistory({ transactions }) {
       </tbody>}
     </table>
   )
-};
+}
 
 TransactionHistory.propTypes = {
   items: PropTypes.array
-}
+};
 
 TransactionHistory.defaultProps = {
   item: []
-}
+};
 
 export default TransactionHistory;
