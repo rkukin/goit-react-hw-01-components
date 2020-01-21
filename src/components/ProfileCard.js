@@ -1,17 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, views, likes } } }) {
 
+  const ProfileCard = styled.div`
+  list-style: none
+  `;
+
+  const StatsList = styled.ul`
+    list-style: none
+
+  `;
+
   return (
-    <div className = "profile">
+    <ProfileCard className = "profile">
       <div className = "description">
         <img className = "avatar" src={avatar} alt='user avatar' />
         <p className = "name">{name}</p>
         <p className="tag">@{tag}</p>
         <p className = "location">{location}</p>
       </div>
-      <ul className="stats">
+      <StatsList className="stats">
         <li>
           <span className="label">Followers</span>
           <span className="quantity" >{followers}</span>
@@ -24,11 +34,10 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
           <span className="label">Likes</span>
           <span className="quantity">{likes}</span>
         </li>
-      </ul>
-    </div>
+      </StatsList>
+    </ProfileCard>
   )
 }
-
 
 ProfileCard.propTypes = {
   "name": PropTypes.string,
