@@ -4,10 +4,6 @@ import styled from "styled-components";
 
 function Statistics({ title, stats }) {
 
-  const STATBGCOLORS = [
-
-  ]
-
   const Statistics = styled.section`
     max-width: 268px;
     box-shadow: 0 2px 2px rgba(2, 2, 2, 0.02);
@@ -32,27 +28,27 @@ function Statistics({ title, stats }) {
   `;
 
   const StatList = styled.ul`
-display: flex;
-flex-direction: row;
-min-width: 100%;
-`;
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+  `;
 
   const StatListItem = styled.li`
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-min-width: 20%;
-align-items: center;
-min-height: 60px;
-`;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60px;
+    flex-grow: 1;
+  `;
 
   const StatLabel = styled.span`
-font-family: "Proxima Nova";
-font-size: 12px;
-font-weight: 300;
-line-height: 20px;
-letter-spacing: 0.3px;
-`;
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+  `;
 
   const StatPercantage = styled.span`
     font-family: "Proxima Nova";
@@ -60,7 +56,7 @@ letter-spacing: 0.3px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.45px;
-`;
+  `;
 
 
   return (

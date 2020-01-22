@@ -19,12 +19,12 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-`;
+  `;
 
   const Avatar = styled.img`
     margin: auto 0;
     border-radius: 50%;
-`;
+  `;
 
   const StatsList = styled.ul`
     list-style: none;
@@ -35,54 +35,55 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
   `;
 
   const StatsItem = styled.li`
-  display: flex;
-  flex-direction: column;
-border: 1px solid #e4e9f0;
-background-color: #f3f6f9;
-min-height: 74px;
-justify-content: space-evenly;
-min-width: 33.3%;
-align-items: center;
-`;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e4e9f0;
+    background-color: #f3f6f9;
+    min-height: 74px;
+    justify-content: space-evenly;
+    min-width: 33.3%;
+    align-items: center;
+  `;
 
   const Name = styled.p`
-color: #122236;
-font-family: Lato;
-font-size: 18px;
-font-weight: 700;
-line-height: 32px;
-`;
+    color: #122236;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+  `;
+
   const Label = styled.p`
-color: #768696;
-font-family: Lato;
-font-size: 14px;
-font-weight: 400;
-line-height: 32px;
-`;
+    color: #768696;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+  `;
 
   const StatLabel = styled.span`
-color: #768696;
-font-family: Lato;
-font-size: 12px;
-font-weight: 400;
-line-height: 32px;
-`;
+    color: #768696;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+  `;
 
   const Quantity = styled.span`
-color: #1f3349;
-font-family: Lato - Black;
-font-size: 14px;
-font-weight: 900;
-line-height: 32px;
-`;
+    color: #1f3349;
+    font-family: Lato - Black;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 32px;
+  `;
 
   return (
-    <ProfileCard className = "profile">
-      <ProfileDescription className = "description">
-        <Avatar className = "avatar" src={avatar} alt='user avatar' />
-        <Name className = "name">{name}</Name>
+    <ProfileCard className="profile">
+      <ProfileDescription className="description">
+        <Avatar className="avatar" src={avatar} alt='user avatar' />
+        <Name className="name">{name}</Name>
         <Label className="tag">@{tag}</Label>
-        <Label className = "location">{location}</Label>
+        <Label className="location">{location}</Label>
       </ProfileDescription>
       <StatsList className="stats">
         <StatsItem>
