@@ -2,13 +2,14 @@ import React from 'react';
 import ProfileCard from './ProfileCard';
 import Statistics from './Statistics';
 import FriendList from './FriendList';
-import TransactionHistory from './TransactionHistory'
+import TransactionHistory from './TransactionHistory';
 import {createGlobalStyle} from "styled-components";
+import stats from '../statistical-data.json';
+import friends from '../friends.json';
+import transactions from '../transactions.json';
+import user from '../user'
 
-
-function App(props) {
-    const GlobalStyles = createGlobalStyle`
-
+const GlobalStyles = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -369,16 +370,17 @@ textarea {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
-}
-`
+}`;
+
+function App() {
 
   return (
     <>
         <GlobalStyles />
-      <ProfileCard user={props.user} />
-      <Statistics title={props.title} stats={props.stats} />
-      <FriendList friends={props.friends} />
-      <TransactionHistory transactions={props.transactions} />
+      <ProfileCard user={user} />
+      <Statistics title='Upload stats' stats={stats} />
+      <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
     </>
   )
 }

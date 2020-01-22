@@ -60,9 +60,9 @@ function Statistics({ title, stats }) {
 
 
   return (
-    <Statistics className="statistics">
-      {title && <Title className="title">{title}</Title>}
-      {stats.length > 0 && <StatList className="stat-list">
+    <Statistics>
+      {title && <Title>{title}</Title>}
+      {stats.length > 0 && <StatList>
         {stats.map(stat => (
           <StatListItem key={stat.id}>
             <StatLabel>{stat.label}</StatLabel>

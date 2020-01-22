@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0b455d2-25c6-498c-9607-6569e153f6f7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:rkukin/goit-react-hw-01-components.git" />
+      </set>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1Wi4QkLleHKsSP9x3UWMmmEnKOG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\goit-react-hw-01-components-reactapp\src\components" />
+      <recent name="D:\Projects\goit-react-hw-01-components-reactapp\src\components\ProfileCard" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0b455d2-25c6-498c-9607-6569e153f6f7" name="Default Changelist" comment="" />
+      <created>1579619066084</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579619066084</updated>
+      <workItem from="1579619068111" duration="7938000" />
+      <workItem from="1579628350549" duration="8906000" />
+      <workItem from="1579709771785" duration="1863000" />
+    </task>
+    <task id="LOCAL-00001" summary="build folder removed, App component added">
+      <created>1579619302392</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579619302392</updated>
+    </task>
+    <task id="LOCAL-00002" summary="build folder removed, App component added">
+      <created>1579619339236</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579619339236</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated FrienListItem component">
+      <created>1579620592025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579620592025</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated FrienListItem component">
+      <created>1579620657788</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579620657788</updated>
+    </task>
+    <task id="LOCAL-00005" summary="start working with styled components">
+      <created>1579628084418</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579628084418</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build folder removed, App component added" />
+    <MESSAGE value="updated FrienListItem component" />
+    <MESSAGE value="start working with styled components" />
+    <option name="LAST_COMMIT_MESSAGE" value="start working with styled components" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1579628083457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579628083457" />
+    <state width="1877" height="133" key="GridCell.Tab.0.bottom" timestamp="1579637552783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="133" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579637552783" />
+    <state width="1877" height="133" key="GridCell.Tab.0.center" timestamp="1579637552783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="133" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579637552783" />
+    <state width="1877" height="133" key="GridCell.Tab.0.left" timestamp="1579637552783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="133" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579637552783" />
+    <state width="1877" height="133" key="GridCell.Tab.0.right" timestamp="1579637552783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="133" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579637552783" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1579628326756">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579628326756" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579628089869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579628089869" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579709771027">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579709771027" />
+    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1579619843472">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579619843472" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579623960373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579623960373" />
+  </component>
+</project>

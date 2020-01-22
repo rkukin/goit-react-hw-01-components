@@ -5,7 +5,7 @@ import FriendListItem from './FriendListItem';
 function FriendList({ friends }) {
 
   return (
-    <ul className="friend-list">
+    <ul>
       {
         friends.map(friend => (
           <FriendListItem key={friend.id} friend={friend} />
@@ -16,7 +16,9 @@ function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
-  friends: PropTypes.array
+  friends:  PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired
+  }))
 };
 
 export default FriendList

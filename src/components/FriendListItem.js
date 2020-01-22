@@ -36,10 +36,10 @@ function FriendListItem({ friend: { avatar, name, isOnline, id } }) {
 
 
   return (
-    <ItemContainer key={id} className="item">
-      <Status className="isOnline" />
-      <Avatar className="avatar" src={avatar} alt="avatar" />
-      <Name className="name">{name}</Name>
+    <ItemContainer key={id}>
+      <Status/>
+      <Avatar src={avatar} alt="avatar" />
+      <Name>{name}</Name>
     </ItemContainer >
   )
 }

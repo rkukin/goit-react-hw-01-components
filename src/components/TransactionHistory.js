@@ -41,7 +41,7 @@ function TransactionHistory({ transactions }) {
   `;
 
   return (
-    <Table className="transaction-history">
+    <Table>
       <thead>
         <TableHead>
           <TableHeader>Type</TableHeader>

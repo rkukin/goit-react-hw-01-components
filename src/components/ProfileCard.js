@@ -78,25 +78,25 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
   `;
 
   return (
-    <ProfileCard className="profile">
-      <ProfileDescription className="description">
-        <Avatar className="avatar" src={avatar} alt='user avatar' />
-        <Name className="name">{name}</Name>
-        <Label className="tag">@{tag}</Label>
-        <Label className="location">{location}</Label>
+    <ProfileCard>
+      <ProfileDescription>
+        <Avatar src={avatar} alt='user avatar' />
+        <Name>{name}</Name>
+        <Label>@{tag}</Label>
+        <Label>{location}</Label>
       </ProfileDescription>
-      <StatsList className="stats">
+      <StatsList>
         <StatsItem>
-          <StatLabel className="label">Followers</StatLabel>
-          <Quantity className="quantity" >{followers}</Quantity>
+          <StatLabel>Followers</StatLabel>
+          <Quantity>{followers}</Quantity>
         </StatsItem>
         <StatsItem>
-          <StatLabel className="label" >Views</StatLabel>
-          <Quantity className="quantity" >{views}</Quantity>
+          <StatLabel>Views</StatLabel>
+          <Quantity>{views}</Quantity>
         </StatsItem>
         <StatsItem>
-          <StatLabel className="label">Likes</StatLabel>
-          <Quantity className="quantity">{likes}</Quantity>
+          <StatLabel>Likes</StatLabel>
+          <Quantity>{likes}</Quantity>
         </StatsItem>
       </StatsList>
     </ProfileCard>
@@ -107,16 +107,9 @@ ProfileCard.propTypes = {
   "name": PropTypes.string,
   "avatar": PropTypes.string,
   "location": PropTypes.string,
-  "tag": PropTypes.string,
-  "followers": PropTypes.number,
-  "views": PropTypes.number,
-  "likes": PropTypes.number
 };
 
 ProfileCard.defaultProps = {
-  name: 'name_goes_here',
-  avatar: 'avatar_url_goes_here',
-  location: 'location_goes_here',
   tag: 'tag_goes_here',
   followers: 0,
   views: 0,
