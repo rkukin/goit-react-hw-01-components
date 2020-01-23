@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, views, likes } } }) {
-
-  const ProfileCard = styled.div`
+const ProfileCardWrapper = styled.div`
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 3px 0px rgba(191, 205, 222, 0.75);
@@ -77,8 +75,10 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
     line-height: 32px;
   `;
 
+function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, views, likes } } }) {
+
   return (
-    <ProfileCard>
+    <ProfileCardWrapper>
       <ProfileDescription>
         <Avatar src={avatar} alt='user avatar' />
         <Name>{name}</Name>
@@ -99,21 +99,23 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
           <Quantity>{likes}</Quantity>
         </StatsItem>
       </StatsList>
-    </ProfileCard>
+    </ProfileCardWrapper>
   )
 }
 
 ProfileCard.propTypes = {
-  "name": PropTypes.string,
+  "name": PropTypes.string.isRequired,
   "avatar": PropTypes.string,
   "location": PropTypes.string,
+  "tag": PropTypes.string.isRequired,
+  "followers": PropTypes.number.isRequired,
+  "views": PropTypes.number.isRequired,
+  "likes": PropTypes.number.isRequired
 };
 
 ProfileCard.defaultProps = {
-  tag: 'tag_goes_here',
-  followers: 0,
-  views: 0,
-  likes: 0
+  avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxGk66K54MOa-94TfkVmJ8A6YIy_an1tpmhzmFc-K0ZK322Su&s",
+  location: "location not set",
 };
 
 export default ProfileCard;

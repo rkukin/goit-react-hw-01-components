@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import styled from "styled-components";
 
 
-function FriendListItem({ friend: { avatar, name, isOnline, id } }) {
-
   const ItemContainer = styled.li`
     display: flex;
     justify-content: space-around;
@@ -18,7 +16,7 @@ function FriendListItem({ friend: { avatar, name, isOnline, id } }) {
     `;
 
   const Status = styled.span`
-    background-color: ${isOnline ? 'green' : 'red'};
+    background-color: ${props=>(props.isOnline ? 'green' : 'red')};
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -34,10 +32,11 @@ function FriendListItem({ friend: { avatar, name, isOnline, id } }) {
     font-size: 40px;
   `;
 
+function FriendListItem({ friend: { avatar, name, isOnline, id } }) {
 
   return (
     <ItemContainer key={id}>
-      <Status/>
+      <Status isOnline={isOnline}/>
       <Avatar src={avatar} alt="avatar" />
       <Name>{name}</Name>
     </ItemContainer >

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-function TransactionHistory({ transactions }) {
 
   const Table = styled.table`
     width: 872px;
@@ -39,6 +38,8 @@ function TransactionHistory({ transactions }) {
     margin: auto;
     text-align: center;
   `;
+
+function TransactionHistory({ transactions }) {
 
   return (
     <Table>

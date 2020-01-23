@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 
-function Statistics({ title, stats }) {
-
-  const Statistics = styled.section`
+const StatisticsWrapper = styled.section`
     max-width: 268px;
     box-shadow: 0 2px 2px rgba(2, 2, 2, 0.02);
     background-color: #ffffff;
@@ -59,8 +57,10 @@ function Statistics({ title, stats }) {
   `;
 
 
+function Statistics({ title, stats }) {
+
   return (
-    <Statistics>
+    <StatisticsWrapper>
       {title && <Title>{title}</Title>}
       {stats.length > 0 && <StatList>
         {stats.map(stat => (
@@ -70,7 +70,7 @@ function Statistics({ title, stats }) {
           </StatListItem>
         ))}
       </StatList>}
-    </Statistics>)
+    </StatisticsWrapper>)
 }
 
 Statistics.propTypes = {
