@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from "styled-components";
 
 
-  const ItemContainer = styled.li`
+const ItemContainer = styled.li`
     display: flex;
     justify-content: space-around;
     max-width: 350px;
@@ -15,19 +15,19 @@ import styled from "styled-components";
       }
     `;
 
-  const Status = styled.span`
-    background-color: ${props=>(props.isOnline ? 'green' : 'red')};
+const Status = styled.span`
+    background-color: ${props => (props.isOnline ? 'green' : 'red')};
     border-radius: 50%;
     width: 20px;
     height: 20px;
     margin: auto 20px;
   `;
 
-  const Avatar = styled.img`
+const Avatar = styled.img`
     border-radius: 10px;
   `;
 
-  const Name = styled.p`
+const Name = styled.p`
     margin auto;
     font-size: 40px;
   `;
@@ -36,7 +36,7 @@ function FriendListItem({ friend: { avatar, name, isOnline, id } }) {
 
   return (
     <ItemContainer key={id}>
-      <Status isOnline={isOnline}/>
+      <Status isOnline={isOnline} />
       <Avatar src={avatar} alt="avatar" />
       <Name>{name}</Name>
     </ItemContainer >

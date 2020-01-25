@@ -10,7 +10,7 @@ const ProfileCardWrapper = styled.div`
     margin-bottom: 100px;
   `;
 
-  const ProfileDescription = styled.div`
+const ProfileDescription = styled.div`
     padding: 20px 0;
     margin: auto 0;
     display: flex;
@@ -19,12 +19,12 @@ const ProfileCardWrapper = styled.div`
     flex-direction: column;
   `;
 
-  const Avatar = styled.img`
+const Avatar = styled.img`
     margin: auto 0;
     border-radius: 50%;
   `;
 
-  const StatsList = styled.ul`
+const StatsList = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
@@ -32,7 +32,7 @@ const ProfileCardWrapper = styled.div`
     justify-content: space-around;
   `;
 
-  const StatsItem = styled.li`
+const StatsItem = styled.li`
     display: flex;
     flex-direction: column;
     border: 1px solid #e4e9f0;
@@ -43,7 +43,7 @@ const ProfileCardWrapper = styled.div`
     align-items: center;
   `;
 
-  const Name = styled.p`
+const Name = styled.p`
     color: #122236;
     font-family: Lato;
     font-size: 18px;
@@ -51,7 +51,7 @@ const ProfileCardWrapper = styled.div`
     line-height: 32px;
   `;
 
-  const Label = styled.p`
+const Label = styled.p`
     color: #768696;
     font-family: Lato;
     font-size: 14px;
@@ -59,7 +59,7 @@ const ProfileCardWrapper = styled.div`
     line-height: 32px;
   `;
 
-  const StatLabel = styled.span`
+const StatLabel = styled.span`
     color: #768696;
     font-family: Lato;
     font-size: 12px;
@@ -67,7 +67,7 @@ const ProfileCardWrapper = styled.div`
     line-height: 32px;
   `;
 
-  const Quantity = styled.span`
+const Quantity = styled.span`
     color: #1f3349;
     font-family: Lato - Black;
     font-size: 14px;
@@ -103,15 +103,18 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
   )
 }
 
-ProfileCard.propTypes = {
+PropTypes.shape({
   "name": PropTypes.string.isRequired,
   "avatar": PropTypes.string,
   "location": PropTypes.string,
   "tag": PropTypes.string.isRequired,
+})
+
+PropTypes.shape({
   "followers": PropTypes.number.isRequired,
   "views": PropTypes.number.isRequired,
   "likes": PropTypes.number.isRequired
-};
+})
 
 ProfileCard.defaultProps = {
   avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxGk66K54MOa-94TfkVmJ8A6YIy_an1tpmhzmFc-K0ZK322Su&s",
