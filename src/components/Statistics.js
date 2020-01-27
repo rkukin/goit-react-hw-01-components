@@ -13,7 +13,7 @@ const StatisticsWrapper = styled.section`
     margin-bottom: 100px;
   `;
 
-  const Title = styled.h2`
+const Title = styled.h2`
     color: #475965;
     font-family: "Proxima Nova - Semibold";
     font-size: 16px;
@@ -25,13 +25,13 @@ const StatisticsWrapper = styled.section`
     display: block;
   `;
 
-  const StatList = styled.ul`
+const StatList = styled.ul`
     display: flex;
     flex-direction: row;
     min-width: 100%;
   `;
 
-  const StatListItem = styled.li`
+const StatListItem = styled.li`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -40,7 +40,7 @@ const StatisticsWrapper = styled.section`
     flex-grow: 1;
   `;
 
-  const StatLabel = styled.span`
+const StatLabel = styled.span`
     font-family: "Proxima Nova";
     font-size: 12px;
     font-weight: 300;
@@ -48,7 +48,7 @@ const StatisticsWrapper = styled.section`
     letter-spacing: 0.3px;
   `;
 
-  const StatPercantage = styled.span`
+const StatPercantage = styled.span`
     font-family: "Proxima Nova";
     font-size: 18px;
     font-weight: 400;
@@ -75,11 +75,12 @@ function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf({
-    id: PropTypes.number.isRequired,
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired
-  })
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired
+    }))
 };
 
 Statistics.defaultProps = {
