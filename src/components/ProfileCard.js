@@ -104,14 +104,16 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
 }
 
 ProfileCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  avatar: PropTypes.string,
-  location: PropTypes.string,
-  tag: PropTypes.string.isRequired,
-  stats: PropTypes.shape({
-    followers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired
+  user: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    avatar: PropTypes.string,
+    location: PropTypes.string,
+    tag: PropTypes.string.isRequired,
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired
+    })
   })
 };
 
