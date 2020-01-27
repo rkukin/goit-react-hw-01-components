@@ -32,10 +32,10 @@ const Name = styled.p`
     font-size: 40px;
   `;
 
-function FriendListItem({ friend: { avatar, name, isOnline, id } }) {
+function FriendListItem({ avatar, name, isOnline }) {
 
   return (
-    <ItemContainer key={id}>
+    <ItemContainer>
       <Status isOnline={isOnline} />
       <Avatar src={avatar} alt="avatar" />
       <Name>{name}</Name>

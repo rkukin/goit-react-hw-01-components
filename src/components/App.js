@@ -3,7 +3,7 @@ import ProfileCard from './ProfileCard';
 import Statistics from './Statistics';
 import FriendList from './FriendList';
 import TransactionHistory from './TransactionHistory';
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import stats from '../statistical-data.json';
 import friends from '../friends.json';
 import transactions from '../transactions.json';
@@ -376,7 +376,7 @@ function App() {
 
   return (
     <>
-        <GlobalStyles />
+      <GlobalStyles />
       <ProfileCard user={user} />
       <Statistics title='Upload stats' stats={stats} />
       <FriendList friends={friends} />
