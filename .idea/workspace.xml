@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0b455d2-25c6-498c-9607-6569e153f6f7" name="Default Changelist" comment="" />
+    <list default="true" id="d0b455d2-25c6-498c-9607-6569e153f6f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProfileCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfileCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Statistics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TransactionHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TransactionHistory.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,6 +123,7 @@
       <workItem from="1579619068111" duration="7938000" />
       <workItem from="1579628350549" duration="8906000" />
       <workItem from="1579709771785" duration="2367000" />
+      <workItem from="1580143611331" duration="691000" />
     </task>
     <task id="LOCAL-00001" summary="build folder removed, App component added">
       <created>1579619302392</created>
@@ -195,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579628089869" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579709771027">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580143611292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579709771027" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580143611292" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1579619843472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

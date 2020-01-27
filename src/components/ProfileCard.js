@@ -104,17 +104,16 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
 }
 
 PropTypes.shape({
-  "name": PropTypes.string.isRequired,
-  "avatar": PropTypes.string,
-  "location": PropTypes.string,
-  "tag": PropTypes.string.isRequired,
-})
-
-PropTypes.shape({
-  "followers": PropTypes.number.isRequired,
-  "views": PropTypes.number.isRequired,
-  "likes": PropTypes.number.isRequired
-})
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
+  location: PropTypes.string,
+  tag: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired
+  })
+});
 
 ProfileCard.defaultProps = {
   avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxGk66K54MOa-94TfkVmJ8A6YIy_an1tpmhzmFc-K0ZK322Su&s",
