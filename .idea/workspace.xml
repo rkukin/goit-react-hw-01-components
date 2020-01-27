@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d0b455d2-25c6-498c-9607-6569e153f6f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProfileCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfileCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Statistics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TransactionHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TransactionHistory.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../goit-react-hw-02-feedback" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -123,7 +120,7 @@
       <workItem from="1579619068111" duration="7938000" />
       <workItem from="1579628350549" duration="8906000" />
       <workItem from="1579709771785" duration="2367000" />
-      <workItem from="1580143611331" duration="691000" />
+      <workItem from="1580143611331" duration="1577000" />
     </task>
     <task id="LOCAL-00001" summary="build folder removed, App component added">
       <created>1579619302392</created>
@@ -177,22 +174,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579628083457" />
-    <state width="1877" height="411" key="GridCell.Tab.0.bottom" timestamp="1579712141394">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1580144503211">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="411" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579712141394" />
-    <state width="1877" height="411" key="GridCell.Tab.0.center" timestamp="1579712141393">
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580144503211" />
+    <state width="1877" height="411" key="GridCell.Tab.0.bottom" timestamp="1580146426753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="411" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579712141393" />
-    <state width="1877" height="411" key="GridCell.Tab.0.left" timestamp="1579712141393">
+    <state width="1877" height="411" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580146426753" />
+    <state width="1877" height="411" key="GridCell.Tab.0.center" timestamp="1580146426753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="411" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579712141393" />
-    <state width="1877" height="411" key="GridCell.Tab.0.right" timestamp="1579712141393">
+    <state width="1877" height="411" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580146426753" />
+    <state width="1877" height="411" key="GridCell.Tab.0.left" timestamp="1580146426753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="411" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579712141393" />
+    <state width="1877" height="411" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580146426753" />
+    <state width="1877" height="411" key="GridCell.Tab.0.right" timestamp="1580146426753">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="411" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580146426753" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1579628326756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

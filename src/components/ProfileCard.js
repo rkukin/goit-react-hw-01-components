@@ -103,7 +103,7 @@ function ProfileCard({ user: { avatar, name, tag, location, stats: { followers, 
   )
 }
 
-PropTypes.shape({
+ProfileCard.propTypes = {
   name: PropTypes.string.isRequired,
   avatar: PropTypes.string,
   location: PropTypes.string,
@@ -113,7 +113,7 @@ PropTypes.shape({
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired
   })
-});
+};
 
 ProfileCard.defaultProps = {
   avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxGk66K54MOa-94TfkVmJ8A6YIy_an1tpmhzmFc-K0ZK322Su&s",
